@@ -23,17 +23,19 @@ namespace Oraculbvisual
         public MainWindow()
         {
             InitializeComponent();
-
-            // sinnloser kommentar
+            MessageBox.Show("In einem weit entverntem Land in Babendorf, in den Tiefen, des Schulgebaude-Dschungles " +
+                "im Raum A1.25 in einem Zelt ist jemand (der sicherlich nicht Sebastian Heine heißt) zu finden. " +
+                "Er hat großes Wissen uber zukunft");
+            MessageBox.Show("Das Orakel: Hallo Wanderer, meine name ist Herr Hei....*Pause* unwichtig eigentlich. " +
+                "Ich weiß viel und wenn du Fragen über die Zukunft hast stell sie mir, vieliecht werde ich sie antworten.");
         }
-        MessageBox vorbegrussung = MessageBox("In einem wiedt entverntem land in Babendorf, in den Tiefen, des Schulgebaude-Djungles im Raum A1.25 in einem Zelt ist jemand (der sicherlich nicht Sebastian Heine heißt) zu finden. Er hat große wissen uber zukunft ) ");
-        MessageBox begrussung = new MessageBox("Hallo Wanderer, meine name ist Herr Hei....*Pause* unwichtig eigentlich. Ich weiß viel und when du Fragen über Zukunft hast stell die, vieliecht ich wurde die antworten.");
+       
         private void TextBox_TBAusgabe() { }
 
       
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            
+            return;
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
