@@ -1,0 +1,16 @@
+U:\Oraculbvisual\Oraculbvisual\bin\Debug\Oraculbvisual.exe.config
+U:\Oraculbvisual\Oraculbvisual\bin\Debug\Oraculbvisual.exe
+U:\Oraculbvisual\Oraculbvisual\bin\Debug\Oraculbvisual.pdb
+U:\Oraculbvisual\Oraculbvisual\obj\Debug\Oraculbvisual.csproj.AssemblyReference.cache
+U:\Oraculbvisual\Oraculbvisual\obj\Debug\MainWindow.g.cs
+U:\Oraculbvisual\Oraculbvisual\obj\Debug\App.g.cs
+U:\Oraculbvisual\Oraculbvisual\obj\Debug\Oraculbvisual_MarkupCompile.cache
+U:\Oraculbvisual\Oraculbvisual\obj\Debug\Oraculbvisual_MarkupCompile.lref
+U:\Oraculbvisual\Oraculbvisual\obj\Debug\MainWindow.baml
+U:\Oraculbvisual\Oraculbvisual\obj\Debug\Oraculbvisual.g.resources
+U:\Oraculbvisual\Oraculbvisual\obj\Debug\Oraculbvisual.Properties.Resources.resources
+U:\Oraculbvisual\Oraculbvisual\obj\Debug\Oraculbvisual.csproj.GenerateResource.cache
+U:\Oraculbvisual\Oraculbvisual\obj\Debug\Oraculbvisual.csproj.CoreCompileInputs.cache
+U:\Oraculbvisual\Oraculbvisual\obj\Debug\Oraculbvisual.exe
+U:\Oraculbvisual\Oraculbvisual\obj\Debug\Oraculbvisual.pdb
+U:\Oraculbvisual\Oraculbvisual\obj\Debug\Oraculbvisual.exe.config
