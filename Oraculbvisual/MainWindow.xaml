@@ -22,7 +22,8 @@
             </Image.RenderTransform>
         </Image>
         <Image Margin="515,32,10,169" Source="/orbplaceholder.png" Stretch="Fill"/>
-        <TextBox Name ="TBAusgabe"  HorizontalAlignment="Left" Margin="573,131,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"   Background = "Transparent"/>
+        <TextBox Name ="TBAusgabe"  HorizontalAlignment="Left" Margin="573,131,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"   Background = "Transparent"/>
+        <Button x:Name="Antwort" Content="Frage stellen" HorizontalAlignment="Left" Margin="508,217,0,0" VerticalAlignment="Top" Height="69" Width="290" Click="Antwort_Click"/>
 
     </Grid>
 </Window>

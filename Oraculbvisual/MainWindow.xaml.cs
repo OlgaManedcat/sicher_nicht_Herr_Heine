@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows;
 using System.Windows.Controls;
+using System.Xml.Serialization;
 
 namespace Oraculbvisual
 {
@@ -28,9 +29,9 @@ namespace Oraculbvisual
             this.Close();
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        private void Antwort_Click(object sender, RoutedEventArgs e)
         {
-
+            Orakel ausführung = new Orakel(int Zahl, string TbEingabe);
         }
     }
 }
