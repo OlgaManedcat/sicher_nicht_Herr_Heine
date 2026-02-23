@@ -18,8 +18,8 @@ namespace Oraculbvisual
         public Orakel(int Zahl, string TbEingabe)
         {
             while (Zahl < 10)
-            { 
-              if (TbEingabe.Contains("+","-","*","/",""))
+            {
+                if (TbEingabe.Contains(new string[] { "+", "-", "*", "/", "" }))
                 {
                     MessageBox.Show("Das kann man doch im Kopf rechnen!");
                 }
