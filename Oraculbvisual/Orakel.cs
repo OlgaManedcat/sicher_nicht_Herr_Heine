@@ -19,10 +19,19 @@ namespace Oraculbvisual
         {
             while (Zahl < 10)
             {
-                if (TbEingabe.Contains(new string[] { "+", "-", "*", "/", "" }))
+                if (TbEingabe.Contains("+") || TbEingabe.Contains("-") || TbEingabe.Contains("*") || TbEingabe.Contains("/") || TbEingabe.Contains("π"))
                 {
                     MessageBox.Show("Das kann man doch im Kopf rechnen!");
                 }
+                if (TbEingabe.Contains("seh") || TbEingabe.Contains("sieh"))
+                {
+                    MessageBox.Show("jung, dynamisch und skelletmäßig!");
+                }
+                if (TbEingabe.Contains("Wetter"))
+                {
+                    MessageBox.Show("Guck aus dem Fenster!");
+                }
+                Zahl++;
             }
         }
     }
