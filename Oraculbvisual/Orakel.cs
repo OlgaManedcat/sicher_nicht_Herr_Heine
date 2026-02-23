@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -31,8 +32,26 @@ namespace Oraculbvisual
                 {
                     MessageBox.Show("Guck aus dem Fenster!");
                 }
-                Zahl++;
+                else
+                {
+                    Random rnd = new Random();
+                    int mvorAntwort = rnd.Next(1, 6);
+                    if (mvorAntwort = 1 )
+                       { mAntwort = "ja"; }
+                    if (mvorAntwort = 2 )
+                    { mvorAntwort = "nein"; }
+                    if (mvorAntwort = 3)
+                    {mvorAntwort = "veilicht" }
+                    if (mvorAntwort = 4 )
+                    { mvorAntwort = "frag mich Morgen"}
+                    if (mvorAntwort = 5 )
+                    
+                    MessageBox.Show($"{mAntwort}");
+                    
+                }
+
+    }
+        Zahl++;
             }
         }
     }
-}
