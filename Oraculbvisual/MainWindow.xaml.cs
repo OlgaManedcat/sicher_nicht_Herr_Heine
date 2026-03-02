@@ -31,7 +31,9 @@ namespace Oraculbvisual
 
         private void Antwort_Click(object sender, RoutedEventArgs e)
         {
-            Orakel ausführung = new Orakel(int Zahl, string TbEingabe);
+            int Zahl = 0;
+            string Eingabe = TbEingabe.Text;
+            Orakel ausführung = new Orakel(Zahl, Eingabe);
         }
     }
 }
