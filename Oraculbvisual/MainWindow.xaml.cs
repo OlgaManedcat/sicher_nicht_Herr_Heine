@@ -24,14 +24,15 @@ namespace Oraculbvisual
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Tschüssiiiii!!!");
+            MessageBox.Show("Tüdelü!!!");
             this.Close();
         }
-
-
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        private void Antwort_Click(object sender, RoutedEventArgs e)
         {
-
+            int Zahl = 0;
+            string Eingabe = TbEingabe.Text;
+            Orakel ausführung = new Orakel(Zahl, Eingabe);
         }
     }
 }
+
