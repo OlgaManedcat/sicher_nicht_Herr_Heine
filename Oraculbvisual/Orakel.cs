@@ -41,7 +41,6 @@ namespace Oraculbvisual
             }
             if (Zahl == 3)
             {
-
                 MessageBox.Show("Ach, lass mich doch in Ruhe!");
                 Environment.Exit(100);
             }

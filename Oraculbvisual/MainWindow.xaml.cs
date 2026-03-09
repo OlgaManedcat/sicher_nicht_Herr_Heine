@@ -19,9 +19,6 @@ namespace Oraculbvisual
                 "Ich weiß viel und wenn du Fragen über die Zukunft hast stell sie mir, vieliecht werde ich sie antworten.");
         }
 
-        private void TextBox_TBAusgabe() { }
-
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Tüdelü!!!");
