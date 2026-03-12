@@ -4,11 +4,14 @@ using System.Windows.Controls;
 
 namespace Oraculbvisual
 {
+    
+
     /// <summary>
     /// Interaktionslogik für MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
+        int zahl = 0;
         public MainWindow()
         {
             InitializeComponent();
@@ -26,9 +29,11 @@ namespace Oraculbvisual
         }
         private void Antwort_Click(object sender, RoutedEventArgs e)
         {
-            int Zahl = 0;
             string Eingabe = TbEingabe.Text;
-            Orakel ausführung = new Orakel(Zahl, Eingabe);
+            Orakel ausführung = new Orakel(Eingabe,zahl);
+            zahl++;
+
+            if (zahl == 4) this.Close();
         }
     }
 }
