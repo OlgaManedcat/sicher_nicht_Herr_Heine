@@ -6,10 +6,8 @@
         xmlns:local="clr-namespace:Oraculbvisual"
         mc:Ignorable="d"
         Title="Sicherlich_nicht_Herr_Heine" Height="450" Width="800">
-    <Grid>
-        <Button Content="Tschüssiiiiiii" HorizontalAlignment="Left" Margin="515,305,0,0" VerticalAlignment="Top" Height="98" Width="261" FontFamily="Algerian" Click="Button_Click"/>
-        <TextBox  Name = "TbEingabe" HorizontalAlignment="Left" Margin="526,87,0,0" TextWrapping="Wrap" Text="Deine Frage geht hier rein!" VerticalAlignment="Top" Width="254" Height="49" FontFamily="Algerian"/>
-        <Image Margin="32,30,334,89" Source="/drapirungfurzelt.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+    <Grid Background="#FF290000">
+        <Image Margin="19,49,377,66" Source="/drapirungfurzelt.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -19,10 +17,21 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-
-
-        <Image HorizontalAlignment="Left" Height="148" Margin="185,217,0,0" VerticalAlignment="Top" Width="133"/>
-        <Image Margin="126,32,400,31" Source="/Untitled_-__08___February_withgreenscreen__2026__20_._59_._38_copy-removebg-preview.png" Stretch="Fill"/>
-        <Button x:Name="Antwort" Content="Frage stellen" HorizontalAlignment="Left" Margin="508,217,0,0" VerticalAlignment="Top" Height="69" Width="290" Click="Antwort_Click"/>
+        <Button HorizontalAlignment="Left" Margin="605,261,0,0" VerticalAlignment="Top" Height="114" Width="195" FontFamily="Algerian" Click="Button_Click" BorderBrush="{x:Null}">
+            <Button.Background>
+                <ImageBrush ImageSource="/tschuss.png" Stretch="UniformToFill"/>
+            </Button.Background>
+        </Button>
+        <TextBox  x:Name = "TbEingabe" HorizontalAlignment="Left" Margin="390,38,0,0" TextWrapping="Wrap" Text="Deine Frage geht hier rein!" VerticalAlignment="Top" Width="449" Height="223" FontFamily="Algerian" BorderBrush="#00000000" HorizontalContentAlignment="Stretch" HorizontalScrollBarVisibility="Disabled" Padding="100,100,0,100">
+            <TextBox.Background>
+                <ImageBrush ImageSource="/fragewindow.png"/>
+            </TextBox.Background>
+        </TextBox>
+        <Button x:Name="Antwort" Content="" HorizontalAlignment="Left" Margin="417,240,0,0" VerticalAlignment="Top" Height="156" Width="203" Click="Antwort_Click" RenderTransformOrigin="0.965,0.624" BorderBrush="#00000000">
+            <Button.Background>
+                <ImageBrush ImageSource="/Untitled - ‎07‎ ‎March‎ ‎2026 ‎20‎.‎35‎.png" Stretch="UniformToFill" TileMode="None"/>
+            </Button.Background>
+        </Button>
+        <Image Margin="52,44,416,10" Source="/mitbrillen.png" Stretch="Fill"/>
     </Grid>
 </Window>

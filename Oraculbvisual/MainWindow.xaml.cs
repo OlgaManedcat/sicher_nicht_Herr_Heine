@@ -35,6 +35,11 @@ namespace Oraculbvisual
 
             if (zahl == 4) this.Close();
         }
+
+        private void TbEingabe_TextChanged()
+        {
+
+        }
     }
 }
 
