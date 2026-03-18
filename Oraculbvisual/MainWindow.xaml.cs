@@ -29,16 +29,10 @@ namespace Oraculbvisual
         }
         private void Antwort_Click(object sender, RoutedEventArgs e)
         {
-            string Eingabe = TbEingabe.Text;
+            string Eingabe = fragewindow.Text;
             Orakel ausführung = new Orakel(Eingabe,zahl);
             zahl++;
-
-            if (zahl == 4) this.Close();
-        }
-
-        private void TbEingabe_TextChanged()
-        {
-
+            if (zahl == 11) this.Close();
         }
     }
 }

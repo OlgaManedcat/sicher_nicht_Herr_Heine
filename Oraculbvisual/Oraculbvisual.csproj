@@ -101,5 +101,17 @@
   <ItemGroup>
     <Resource Include="orbplaceholder.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="tschuss.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="fragewindow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="fragestellen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="mitbrillen.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

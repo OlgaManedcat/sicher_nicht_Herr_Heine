@@ -7,7 +7,7 @@ namespace Oraculbvisual
     {
         public Orakel(string TbEingabe, int zahl)
         {
-            if (zahl >= 3)
+            if (zahl >= 10)
             {
                 MessageBox.Show("Ach, lass mich doch in Ruhe!");
             }

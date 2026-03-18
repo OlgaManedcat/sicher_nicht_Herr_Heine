@@ -17,21 +17,21 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-        <Button HorizontalAlignment="Left" Margin="605,261,0,0" VerticalAlignment="Top" Height="114" Width="195" FontFamily="Algerian" Click="Button_Click" BorderBrush="{x:Null}">
+        <Button x:Name="tschuss" HorizontalAlignment="Left" Margin="605,261,0,0" VerticalAlignment="Top" Height="114" Width="195" FontFamily="Algerian" Click="Button_Click" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="/tschuss.png" Stretch="UniformToFill"/>
             </Button.Background>
         </Button>
-        <TextBox  x:Name = "TbEingabe" HorizontalAlignment="Left" Margin="390,38,0,0" TextWrapping="Wrap" Text="Deine Frage geht hier rein!" VerticalAlignment="Top" Width="449" Height="223" FontFamily="Algerian" BorderBrush="#00000000" HorizontalContentAlignment="Stretch" HorizontalScrollBarVisibility="Disabled" Padding="100,100,0,100">
+        <TextBox  x:Name = "fragewindow" HorizontalAlignment="Left" Margin="390,38,0,0" TextWrapping="Wrap" Text="Deine Frage geht hier rein!" VerticalAlignment="Top" Width="449" Height="223" FontFamily="Algerian" BorderBrush="#00000000" HorizontalContentAlignment="Stretch" HorizontalScrollBarVisibility="Disabled" Padding="100,100,0,100">
             <TextBox.Background>
                 <ImageBrush ImageSource="/fragewindow.png"/>
             </TextBox.Background>
         </TextBox>
-        <Button x:Name="Antwort" Content="" HorizontalAlignment="Left" Margin="417,240,0,0" VerticalAlignment="Top" Height="156" Width="203" Click="Antwort_Click" RenderTransformOrigin="0.965,0.624" BorderBrush="#00000000">
+        <Button x:Name="fragestellen" Content="" HorizontalAlignment="Left" Margin="417,240,0,0" VerticalAlignment="Top" Height="156" Width="203" Click="Antwort_Click" RenderTransformOrigin="0.965,0.624" BorderBrush="#00000000">
             <Button.Background>
-                <ImageBrush ImageSource="/Untitled - ‎07‎ ‎March‎ ‎2026 ‎20‎.‎35‎.png" Stretch="UniformToFill" TileMode="None"/>
+                <ImageBrush ImageSource="/fragestellen.png" Stretch="UniformToFill" TileMode="None"/>
             </Button.Background>
         </Button>
-        <Image Margin="52,44,416,10" Source="/mitbrillen.png" Stretch="Fill"/>
+        <Image x:Name="mitbrillen" Margin="52,44,416,10" Source="/mitbrillen.png" Stretch="Fill"/>
     </Grid>
 </Window>
