@@ -5,9 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Oraculbvisual"
         mc:Ignorable="d"
-        Title="Sicherlich_nicht_Herr_Heine" Height="450" Width="800">
-    <Grid Background="#FF290000">
-        <Image Margin="19,49,377,66" Source="/drapirungfurzelt.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+        Title="Sicherlich_nicht_Herr_Heine" Height="450" Width="800" ResizeMode="NoResize">
+    <Canvas Background="#FF290000">
+        <Image Source="/drapirungfurzelt.jpg" Stretch="Fill" Width="404" Height="335"
+               Canvas.Left="19" Canvas.Top="49" RenderTransformOrigin="0.5,0.5">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -17,21 +18,59 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-        <Button x:Name="tschuss" HorizontalAlignment="Left" Margin="605,261,0,0" VerticalAlignment="Top" Height="114" Width="195" FontFamily="Algerian" Click="Button_Click" BorderBrush="{x:Null}">
+        <Button x:Name="tschuss" Width="195" Height="114" FontFamily="Algerian" Click="Button_Click" BorderBrush="{x:Null}"
+                Canvas.Left="605" Canvas.Top="272">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <Rectangle x:Name="BackgroundRect" Fill="{TemplateBinding Background}" />
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="BackgroundRect" Property="Opacity" Value="0.6"/>
+                        </Trigger>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="BackgroundRect" Property="Opacity" Value="0.8"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Button.Template>
             <Button.Background>
                 <ImageBrush ImageSource="/tschuss.png" Stretch="UniformToFill"/>
             </Button.Background>
         </Button>
-        <TextBox  x:Name = "fragewindow" HorizontalAlignment="Left" Margin="390,38,0,0" TextWrapping="Wrap" Text="Deine Frage geht hier rein!" VerticalAlignment="Top" Width="449" Height="223" FontFamily="Algerian" BorderBrush="#00000000" HorizontalContentAlignment="Stretch" HorizontalScrollBarVisibility="Disabled" Padding="100,100,0,100">
+        <TextBox x:Name="fragewindow" Width="449" Height="223" FontFamily="Algerian" BorderBrush="#00000000"
+                 TextWrapping="Wrap" Text="Deine Frage geht hier rein!" HorizontalContentAlignment="Stretch"
+                 HorizontalScrollBarVisibility="Disabled" Padding="100,100,0,100"
+                 Canvas.Left="390" Canvas.Top="38">
             <TextBox.Background>
                 <ImageBrush ImageSource="/fragewindow.png"/>
             </TextBox.Background>
         </TextBox>
-        <Button x:Name="fragestellen" Content="" HorizontalAlignment="Left" Margin="417,240,0,0" VerticalAlignment="Top" Height="156" Width="203" Click="Antwort_Click" RenderTransformOrigin="0.965,0.624" BorderBrush="#00000000">
+        <Button x:Name="fragestellen" Content="" Width="202" Height="114" Canvas.Left="412" Canvas.Top="272"
+                Click="Antwort_Click" BorderBrush="#00000000" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <Rectangle x:Name="BackgroundRect" Fill="{TemplateBinding Background}" />
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="BackgroundRect" Property="Opacity" Value="0.6"/>
+                        </Trigger>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="BackgroundRect" Property="Opacity" Value="0.8"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Button.Template>
             <Button.Background>
                 <ImageBrush ImageSource="/fragestellen.png" Stretch="UniformToFill" TileMode="None"/>
             </Button.Background>
         </Button>
-        <Image x:Name="mitbrillen" Margin="52,44,416,10" Source="/mitbrillen.png" Stretch="Fill"/>
-    </Grid>
+        <Image x:Name="mitbrillen" Source="/mitbrillen.png" Width="332" Height="396"
+               Canvas.Left="53" Canvas.Top="38"/>
+    </Canvas>
 </Window>
